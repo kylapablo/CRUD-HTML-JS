@@ -34,7 +34,7 @@ update.addEventListener('click', e => {
     });
 });
 
-removeBtn.addEventListener('click', e => {
+remove.addEventListener('click', e => {
     e.preventDefault();
     axios({
         method: 'delete',
