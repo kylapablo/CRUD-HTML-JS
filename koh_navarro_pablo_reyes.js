@@ -3,7 +3,7 @@ const port = 4000;
 
 const admin = require("firebase-admin");
 
-var serviceAccount = require("C:/Users/Kym/Desktop/school/ASI/crud-asi-firebase-adminsdk-7a4ne-36d5dd8171.json");
+var serviceAccount = require("D:/src/ASI/crud-asi-firebase-adminsdk-7a4ne-36d5dd8171.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -25,15 +25,29 @@ app.get('/', (req, res) => {
 });
 
 app.post('/save', (req, res) => {
-    const user_id = usersRef.push().key;
-    usersRef.child(user_id).set({
-        studnum: req.body.studnum,
+    const userID = usersRef.push().key;
+    usersRef.child(userID).set({
+        student_number: req.body.studnum,
         first_name: req.body.first_name,
         last_name: req.body.last_name,
         section: req.body.section
     });
 });
-
+app.put('/update', (req, res) => {
+    const newData = {
+        student_number: req.body.studnum,
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        section: req.body.section
+    };
+    usersRef.child(req.body.userID).update(newData);
+});
+app.delete('/remove', (req, res) => {
+    usersRef.child(req.body.userID).remove();
+});
+usersRef.orderByValue().limitToLast(5).on('value', snapshot => {
+    console.log(snapshot.val());
+});
 app.listen(port, () => {
     console.log(`App is listening to port ${port}`);
 });

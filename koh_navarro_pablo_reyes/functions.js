@@ -1,4 +1,5 @@
 const studnum = document.getElementById('studnum');
+const userID = document.getElementById('userid');
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
 const section = document.getElementById('section');
@@ -13,6 +14,7 @@ add.addEventListener('click', e => {
         url: '/save',
         data: {
             studnum: studnum.value,
+            userID: userID.value,
             first_name: firstName.value,
             last_name: lastName.value,
             section: section.value
@@ -29,7 +31,8 @@ update.addEventListener('click', e => {
             studnum: studnum.value,
             first_name: firstName.value,
             last_name: lastName.value,
-            section: section.value
+            section: section.value,
+            userID: userID.value,
         }
     });
 });
@@ -40,7 +43,8 @@ remove.addEventListener('click', e => {
         method: 'delete',
         url: '/remove',
         data: {
-            user_id: userId.value
+            
+            userID: userID.value,
         }
     });
 });
