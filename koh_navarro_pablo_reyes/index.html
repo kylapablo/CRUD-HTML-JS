@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ASI CRUS</title>
+    <title>ASI CRUD</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const firebaseConfig = {
+      apiKey: "AIzaSyBsV0Q0wuGcuq-rZQ6Dy5RH8legmwnLcmg",
+      authDomain: "crud-asi.firebaseapp.com",
+      databaseURL: "https://crud-asi-default-rtdb.firebaseio.com",
+      projectId: "crud-asi",
+      storageBucket: "crud-asi.appspot.com",
+      messagingSenderId: "189901715454",
+      appId: "1:189901715454:web:0e024f9885026af919f2af",
+      measurementId: "G-K7YSEK8THN"
+    };
+    firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
 <body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="user.html">Users</a></li>
+    </ul>
     <main>
         <form>
             <label for="id">id</label><br>
@@ -30,6 +47,7 @@
             <button id="add" class="btn waves-effect waves-light">Add</button>
             <button id="update" class="btn waves-effect waves-light">Update</button>
             <button id="remove" class="btn waves-effect red darkin-1">Remove</button>
+            
         </form>
     </main>
     <script src="./functions.js"></script>

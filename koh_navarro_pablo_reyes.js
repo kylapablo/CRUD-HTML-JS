@@ -3,7 +3,7 @@ const port = 4000;
 
 const admin = require("firebase-admin");
 
-var serviceAccount = require("D:/src/ASI/crud-asi-firebase-adminsdk-7a4ne-36d5dd8171.json");
+var serviceAccount = require("C:/Users/Kym/Desktop/school/ASI/crud-asi-firebase-adminsdk-7a4ne-36d5dd8171.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
