@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efeeee;
+}
+
+.nav {
+  width: 100vw;
+  height: 80px;
+  background-color: #ecf0f3;
+  box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  list-style-type: none;
+  margin-bottom: 35px;
+}
+
+body {
+  margin: 0;  
+  background: #efeeee;
+  font-family: poppins;
+}
+.logo{
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+}
+.logo:hover{
+  color: grey;
+
+}
+.container {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #4477b2;
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.btn-primary{
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  text-align: center;
+  background: #4477b2;
+  padding: 10px 160px 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+
+}
+.btn{
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  text-align: center;
+  padding: 5px 20px 5px;
+  border-radius: 50px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.btn-blue{
+  background: #4477b2; 
+}
+
+.btn-red{
+  background: #c23b22;
+  
+}
+.btn-second{
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  text-align: center;
+  padding: 10px 50px 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.btn-secondary {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  text-align: center;
+  background: #ecf0f3;
+  padding: 10px 160px 10px;
+  border-radius: 50px;
+
+
+  transition: 0.5s;
+}
+
+.btn-secondary:hover{
+  box-shadow: none;
+}
+.btn-second:hover{
+  box-shadow: none;
+}
+.btn-primary:hover{
+  box-shadow: none;
+}
+.btn:hover{
+  box-shadow: none;
+}
+
+.a {
+  position: absolute;
+  font-size: 8px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
