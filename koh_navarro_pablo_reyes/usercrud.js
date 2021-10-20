@@ -33,5 +33,4 @@ function AddToTable(fName,lName,sec,snum){
     row.appendChild(td3);
     row.appendChild(td4);
     tbody.appendChild(row);
-    console.log(td1)
 }
