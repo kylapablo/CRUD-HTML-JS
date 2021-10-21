@@ -50,3 +50,17 @@ li {
   .active {
     background-color: #4477b2;
   }
+
+  thead, tbody{
+    text-align: center;
+  }
+
+  thead{
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+  tbody{
+    font-family: cursive;
+    font-size: 15px;
+  }

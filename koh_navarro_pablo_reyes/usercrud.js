@@ -7,6 +7,7 @@ function SelectAllData(){
                 var lName = CurrentRecord.val().last_name;
                 var sec= CurrentRecord.val().section;
                 var snum = CurrentRecord.val().student_number;
+                
                 AddToTable(fName,lName,sec,snum);
             }
         );
