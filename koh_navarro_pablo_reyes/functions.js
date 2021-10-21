@@ -48,3 +48,15 @@ remove.addEventListener('click', e => {
         }
     });
 });
+
+function newUser() {
+    alert("New User Added!");
+  }
+
+function updateUser() {
+    alert("User Updated!");
+  }
+
+function deleteUser() {
+    alert("User Deleted!");
+  }
