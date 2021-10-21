@@ -32,6 +32,7 @@ app.post('/save', (req, res) => {
         last_name: req.body.last_name,
         section: req.body.section
     });
+    console.log('userID')
 });
 app.put('/update', (req, res) => {
     const newData = {
